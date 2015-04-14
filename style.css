@@ -3,6 +3,13 @@
 #buffer-extension-hover-button {
   display: none !important; }
 
+.cta-bar a {
+  border: 2px solid white;
+  border-radius: 4px;
+  text-align: center;
+  padding: 0 20px;
+  line-height: 50px; }
+
 .nav-links {
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
@@ -27,7 +34,7 @@
   left: 0;
   top: 0; }
 
-.logo svg, .vision-statement span, .cta-bar h2, .cta-button, .footer-container {
+.logo svg, .vision-statement span, .work-box .row, .cta-bar h2, .cta-button, .footer-container {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -893,6 +900,10 @@ there.
 /* Larger than desktop */
 /* Larger than Desktop HD */
 * {
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
   font-family: 'Alegreya Sans', sans-serif; }
 
 body {
@@ -1036,6 +1047,54 @@ nav .container {
   right: 10px;
   color: #8c4646;
   font-size: 21px; }
+  .learn-more:hover {
+    color: #482424; }
+
+.aims-box {
+  text-align: center; }
+  .aims-box span, .aims-box p {
+    display: block;
+    width: 100%; }
+  .aims-box span {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600; }
+  .aims-box p {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 22px; }
+
+div.aim-icon {
+  height: 120px; }
+  div.aim-icon svg {
+    height: 100%; }
+  div.aim-icon:hover {
+    -webkit-transform: translate(0, -5px);
+    -moz-transform: translate(0, -5px);
+    -ms-transform: translate(0, -5px);
+    transform: translate(0, -5px); }
+
+.work-box {
+  height: 300px;
+  padding: 10px 25px 75px 25px; }
+  .work-box div {
+    height: 100%; }
+  .work-box p {
+    font-size: 20px;
+    line-height: 22px; }
+
+.work-list {
+  list-style-type: none;
+  font-size: 20px;
+  margin: 0px 0 0 50px;
+  padding-top: 15px; }
+
+.work-image {
+  -webkit-clip-path: polygon(5% 0, 100% 0, 100% 100%, 5% 100%, 5% 60%, 0 50%, 5% 40%);
+  clip-path: polygon(5% 0, 100% 0, 100% 100%, 5% 100%, 5% 60%, 0 50%, 5% 40%);
+  background: url("http://macarthur.dev/tilgry/wp-content/themes/tilgry-theme/img/people.jpg");
+  background-size: cover;
+  background-position: center; }
 
 .cta-bar {
   width: 100%;
@@ -1044,16 +1103,18 @@ nav .container {
   margin: 25px 0;
   position: relative; }
   .cta-bar h2 {
-    float: left;
     color: white;
     z-index: 1; }
-  .cta-bar button {
-    float: right;
+  .cta-bar a {
+    display: block;
     z-index: 1; }
 
 .cta-container {
   height: 100%;
   width: 60%; }
+  .cta-container > div {
+    height: 100%;
+    text-align: center; }
 
 .cta-button {
   color: white;
@@ -1066,6 +1127,8 @@ nav .container {
     background: white;
     color: #383938;
     border-color: white; }
+  .cta-button.donate-cta-button:hover {
+    color: #8c4646; }
 
 .first-cta-bar {
   background: url("http://macarthur.dev/tilgry/wp-content/themes/tilgry-theme/img/ctabackground.jpg");
@@ -1087,7 +1150,8 @@ footer {
   background: #383938;
   padding: 25px;
   text-align: center;
-  color: white; }
+  color: white;
+  margin-top: 25px; }
 
 .footer-logo-holder {
   position: relative;
@@ -1102,7 +1166,8 @@ footer {
 .footer-nav-links {
   font-weight: 100; }
   .footer-nav-links li:hover {
-    background: none; }
+    background: none;
+    margin-top: -2px; }
 
 .copyright {
   border-top: 1px solid white;

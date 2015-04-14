@@ -2,8 +2,10 @@ $green: #55886f;
 $gray: #383938;
 $background: #f6f6f6;
 $red: #8c4646;
+$darkred: #482424;
 
 *{
+	@include transitionSpeed;
 	font-family: 'Alegreya Sans', sans-serif;
 }
 
@@ -157,8 +159,67 @@ nav{
 			bottom: 5px;
 			right: 10px;
 			color: $red;
-			  font-size: 21px;
+			font-size: 21px;
+			&:hover{
+				color: $darkred;
+			}
 		}
+		.aims-box{
+			text-align:center;
+			span,p{
+				display:block;
+				width:100%;
+			}
+			span{
+				margin-bottom: 15px;
+				font-size: 20px;
+  				font-weight: 600;
+			}
+			p{
+				margin-top:15px;
+				  font-size: 18px;
+  				line-height: 22px;
+			}
+		}
+			div.aim-icon{
+				height: 120px;
+				svg{
+					height:100%;
+				}
+				&:hover{
+					@include translateXY(0, -5px);
+				}
+
+			}
+		.work-box{
+			height: 300px;
+			  padding: 10px 25px 75px 25px;
+			div{
+				height:100%;
+			}
+			.row{
+				@extend %vertical-align;
+			}
+			p{
+				  font-size: 20px;
+  				line-height: 22px;
+			}
+		}
+			.work-list{
+				list-style-type:none;
+				font-size: 20px;
+				margin: 0px 0 0 50px;
+				  padding-top: 15px;
+			}
+			.work-image{
+				@include clipPath;
+				background: url('http://macarthur.dev/tilgry/wp-content/themes/tilgry-theme/img/people.jpg');
+				background-size:cover;
+				background-position:center;
+
+			}
+
+
 
 .cta-bar{
 	width: 100%;
@@ -168,18 +229,22 @@ nav{
 	position:relative;
 	h2{
 		@extend %vertical-align;
-		float:left;
 		color:white;
 		z-index: 1;
 	}
-	button{
-		float:right;
+	a{
+		@extend %button;
+		display:block;
 		z-index: 1;
 	}
 }
 	.cta-container{
 		height:100%;
 		width: 60%;
+		& > div{
+			height: 100%;
+			  text-align: center;
+		}
 	}
 	.cta-button{
 		@extend %vertical-align;
@@ -193,6 +258,11 @@ nav{
 			background:white;
 			color:$gray;
 			border-color:white;
+		}
+		&.donate-cta-button{
+			&:hover{
+				color: $red;
+			}
 		}
 	}
 	.first-cta-bar{
@@ -217,6 +287,7 @@ footer{
 	padding: 25px;
 	text-align:center;
 	color:white;
+	margin-top:25px;
 }
 	.footer-container{
 		@extend %vertical-align;
@@ -238,6 +309,7 @@ footer{
 			li{
 				&:hover{
 					background: none;
+					margin-top: -2px;
 				}
 			}
 		}
@@ -248,7 +320,6 @@ footer{
 			  margin: 15px auto 0 auto;
 			  padding: 10px;
 		}
-
 
 
 .mobile-menu-toggle, .mobile-nav-links{
