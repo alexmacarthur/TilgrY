@@ -34,7 +34,7 @@
   left: 0;
   top: 0; }
 
-.logo svg, .vision-statement span, .work-box .row, .cta-bar h2, .cta-button, .footer-container {
+.logo svg, .vision-statement span, .work-box .row, .cta-bar h2, .cta-button, .footer-container, .page-title {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -906,6 +906,17 @@ there.
   transition: all .1s ease-in-out;
   font-family: 'Alegreya Sans', sans-serif; }
 
+html, body {
+  height: 100%; }
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  /* This line and the next line are not necessary unless you need IE6 support */
+  height: 100%;
+  margin: 0 auto 200px;
+  /* the bottom margin is the negative value of the footer's height */ }
+
 body {
   background: #f6f6f6; }
 
@@ -1151,7 +1162,7 @@ footer {
   padding: 25px;
   text-align: center;
   color: white;
-  margin-top: 25px; }
+  margin-top: 50px; }
 
 .footer-logo-holder {
   position: relative;
@@ -1178,5 +1189,22 @@ footer {
 
 .mobile-menu-toggle, .mobile-nav-links {
   display: none; }
+
+.header-banner {
+  width: 100%;
+  height: 400px;
+  background: url("http://macarthur.dev/tilgry/wp-content/themes/tilgry-theme/img/pageimage1.jpg");
+  position: absolute;
+  text-align: center; }
+
+.header-banner-container {
+  z-index: 1;
+  height: 200px; }
+
+.page-title {
+  color: white; }
+
+main {
+  margin-top: 200px; }
 
 /*# sourceMappingURL=style.css.map */

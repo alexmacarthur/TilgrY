@@ -9,6 +9,17 @@ $darkred: #482424;
 	font-family: 'Alegreya Sans', sans-serif;
 }
 
+html, body{
+	height:100%;
+}
+
+.wrapper{
+	min-height: 100%;
+	height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+	height: 100%;
+	margin: 0 auto 200px; /* the bottom margin is the negative value of the footer's height */
+}
+
 body{
 	background: $background;
 }
@@ -287,7 +298,7 @@ footer{
 	padding: 25px;
 	text-align:center;
 	color:white;
-	margin-top:25px;
+	margin-top:50px;
 }
 	.footer-container{
 		@extend %vertical-align;

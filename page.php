@@ -9,11 +9,13 @@
 
     <main>
 
-	    <div class="container">
+	    <div class="container page-container">
 	 
 			<?php the_post(); ?>
 
 	 		<div class="box page-box">
+
+	 	
 	 			<?php the_content(); ?>
 	 		</div>
 				

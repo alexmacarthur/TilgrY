@@ -65,9 +65,10 @@
 		<?php if (!is_front_page()): ?>
 
 			<div class="header-banner">
-				<div class="container">
+				<div class="container header-banner-container">
 					<h1 class="page-title"><?php the_title(); ?></h1>
 				</div>
+				<div class="background-cover"></div>
 			</div>
 
 		<?php endif; ?>
