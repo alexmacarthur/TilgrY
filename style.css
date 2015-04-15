@@ -1201,10 +1201,30 @@ footer {
   z-index: 1;
   height: 200px; }
 
-.page-title {
-  color: white; }
+.background-cover {
+  background: rgba(56, 57, 56, 0.7); }
 
-main {
+.page-title {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800; }
+
+.page-main {
   margin-top: 200px; }
+  .page-main h2 {
+    font-weight: 500; }
+  .page-main p {
+    font-size: 20px;
+    line-height: 22px; }
+
+.page-box {
+  padding: 25px; }
+
+.mission-statement {
+  font-size: 30px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  line-height: 40px; }
 
 /*# sourceMappingURL=style.css.map */

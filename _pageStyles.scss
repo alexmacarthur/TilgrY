@@ -8,13 +8,34 @@
 	.header-banner-container{
 		z-index:1;
 		height:200px;
-
+	}
+	.background-cover{
+		background: rgba($gray, .7);
 	}
 	.page-title{
 		@extend %vertical-align;
 		color:white;
+		  text-transform: uppercase;
+  font-weight: 800;
 	}
 
-main{
+.page-main{
 	margin-top: 200px;
+	h2{
+		  font-weight: 500;
+	}
+	p{
+		font-size:20px;
+		line-height:22px;
+	}
 }
+	.page-box{
+		  padding: 25px;
+	}
+	.mission-statement{
+		font-size: 30px;
+		text-align:center;
+		display:block;
+		width:100%;
+		line-height: 40px;
+	}
