@@ -17,7 +17,7 @@ html, body{
 	min-height: 100%;
 	height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
 	height: 100%;
-	margin: 0 auto 200px; /* the bottom margin is the negative value of the footer's height */
+	// margin: 0 auto 200px; /* the bottom margin is the negative value of the footer's height */
 }
 
 body{
@@ -224,7 +224,7 @@ nav{
 			}
 			.work-image{
 				@include clipPath;
-				background: url('http://macarthur.dev/tilgry/wp-content/themes/tilgry-theme/img/people.jpg');
+				background: url('http://www.tilgry.org/wp-content/themes/tilgry-theme/img/people.jpg');
 				background-size:cover;
 				background-position:center;
 
@@ -277,7 +277,7 @@ nav{
 		}
 	}
 	.first-cta-bar{
-		background: url('http://macarthur.dev/tilgry/wp-content/themes/tilgry-theme/img/ctabackground.jpg');
+		background: url('http://www.tilgry.org/wp-content/themes/tilgry-theme/img/ctabackground.jpg');
 		background-attachment:fixed;
 		background-size: cover;
 		background-position:center;
