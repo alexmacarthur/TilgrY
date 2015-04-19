@@ -1,4 +1,5 @@
 $green: #55886f;
+$dark-green: #3f6552;
 $gray: #383938;
 $background: #f6f6f6;
 $red: #8c4646;
@@ -7,6 +8,9 @@ $darkred: #482424;
 *{
 	@include transitionSpeed;
 	font-family: 'Alegreya Sans', sans-serif;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html, body{
@@ -52,6 +56,11 @@ nav{
 				@extend %vertical-align;
 				display:block;
 				height: 80%;
+			}
+			a{
+				display:block;
+				height:100%;
+				width:100%;
 			}
 		}
 		.vision-statement{

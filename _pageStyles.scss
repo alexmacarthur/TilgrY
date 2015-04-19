@@ -36,6 +36,12 @@
 		font-size:20px;
 		line-height:22px;
 	}
+	a{
+		color: $green;
+		&:hover{
+			color: $dark-green;
+		}
+	}
 	ul{
 		@extend p;
 	}
@@ -50,6 +56,69 @@
 		width:100%;
 		line-height: 40px;
 	}
+
+.contact-form{
+	input{
+		width:100%;
+		&[type=submit]{
+			@extend %button;
+			border-color: $green;
+			font-size: 20px;
+  			font-weight: normal;
+  			line-height:100%;
+  			color: $green;
+  			&:hover{
+  				background: $green;
+  				color:white;
+  			}
+		}
+	}
+	textarea{
+		@extend input;
+	}
+	label{
+		font-size: 20px;
+  		font-weight: 400;
+  		span{
+  			color: red;
+  			margin-left: 3px;
+  		}
+	}
+}
+
+#form-messages{
+	width: 100%;
+	line-height: 40px;
+	text-align: center;
+	background: $red;
+	margin-bottom: 10px;
+	color:white;
+	font-size: 18px;
+}
+	.success{
+		background: $green;
+	}
+	.error{
+		background: $red;
+	}
+
+.donate-options{
+	text-align:center;
+	h3{
+		border:none;
+		text-align:center;
+		color: $green;
+	}
+	svg{
+		margin: 0 auto;
+		width: 45%;
+		&:hover{
+			path{
+				fill: $dark-green;
+			}
+		}
+	}
+}
 
 /* Wordpress class tweaks */
 .aligncenter {

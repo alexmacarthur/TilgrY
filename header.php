@@ -36,8 +36,9 @@
 				<div class="container">
 
 					<div class="logo">
-						<a href="<?php echo home_url(); ?>"></a>
-						<?php get_template_part('img/inline', 'logo.svg'); ?>
+						<a href="<?php echo home_url(); ?>">
+							<?php get_template_part('img/inline', 'logo.svg'); ?>
+						</a>
 					</div>
 
 					<div class="vision-statement">

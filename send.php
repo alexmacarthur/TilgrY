@@ -38,7 +38,7 @@
         $recipient = "alex@macarthur.me";
 
         // Set the email subject.
-        $subject = "Sahlstroms HVAC Message Submitted";
+        $subject = "TilgrY Online Form Submitted";
 
         // Build the email content.
         $email_content = "Name: $name\n";
