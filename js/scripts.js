@@ -11,15 +11,18 @@ window.onresize = function(){
 
 function initMobileMenu(){
     $('#mobile-menu-toggle').click(function(){
-        if($('.mobile-nav-links').hasClass('open-mobile-menu')){
-            $('.mobile-nav-links').removeClass('open-mobile-menu');
+        if($('.nav-links').hasClass('open-mobile-menu')){
+            $('.nav-links').removeClass('open-mobile-menu');
+            $('html').removeClass('overflow-hidden');
         }else{
-            $('.mobile-nav-links').addClass('open-mobile-menu');
+            $('.nav-links').addClass('open-mobile-menu');
+            $('html').addClass('overflow-hidden');
         }
     });
     
     $('#close-mobile-menu').click(function(){
-        $('.mobile-nav-links').removeClass('open-mobile-menu');
+        $('.nav-links').removeClass('open-mobile-menu');
+        $('html').removeClass('overflow-hidden');
     });
 } 
 
@@ -114,9 +117,18 @@ $(function() {
         return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
 
       };
+
+      $.fn.verticalCenter = function(){
+
+      };
         
 })(jQuery);
 
+    var windowHeight = $(window).height();
+        elementHeight = $('.nav-links li').height() * 5;
+        newMargin = (windowHeight - elementHeight)/2;
+
+    $('.nav-links li:first-of-type').css('margin-top', newMargin);
 
 // when scrolling, checks if element is visible. if visibile, fade in.
 // $(window).scroll(function(event) {

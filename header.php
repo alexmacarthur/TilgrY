@@ -25,12 +25,6 @@
 					<?php get_template_part('img/inline', 'mobilemenu.svg'); ?>
 				</div>
 
-				<div class="mobile-nav-links">
-					<div id="close-mobile-menu"><?php get_template_part('img/inline', 'close.svg'); ?></div>
-					<ul>
-						<li><a href="<?php echo get_site_url(); ?>/link"></a></li>
-					</ul>
-				</div>
 			<div class="top-bar">
 
 				<div class="container">
@@ -52,6 +46,8 @@
 			<div class="nav-links-bar">
 
 				<ul class="nav-links">
+					<div id="close-mobile-menu"><?php get_template_part('img/inline', 'close.svg'); ?></div>
+					
 					<li>Who We Are<a href="<?php echo get_site_url(); ?>/about"></a></li>
 					<li>Our Approach<a href="<?php echo get_site_url(); ?>/approach"></a></li>
 					<li>Our Services<a href="<?php echo get_site_url(); ?>/services"></a></li>

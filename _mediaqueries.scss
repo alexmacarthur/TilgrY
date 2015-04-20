@@ -11,9 +11,54 @@
 			font-size: 18px;
 		}
 	}
+	.home-slider{
+		.caption-wrap{
+			.caption{
+				width: 90%;
+			}
+		}
+	}
 
 }
 
 @media screen and (max-width: 640px){
-	
+	.top-bar{
+		height: 175px;
+	}
+		.logo, .vision-statement{
+			width:100%;
+		}
+		.vision-statement{
+			height: 55px;
+			span{
+				text-align:center;
+			}
+		}
+		.logo{
+			height: 100px;
+			svg{
+				margin: 0 auto;
+			}
+		}
+	.mobile-menu-toggle{
+		display:block;
+	}
+	.nav-links{
+		@include offScreen;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba($background, .95);
+		z-index: 1;
+		display:block;
+		li{
+			width:100%;
+			color: $green;
+			&:hover{
+				color:white;
+			}
+		}
+	}
 }

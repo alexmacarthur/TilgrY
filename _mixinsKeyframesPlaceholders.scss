@@ -1,8 +1,19 @@
+.overflow-hidden{
+	overflow: hidden;
+}
 @mixin transitionSpeed{
 	-webkit-transition: all .1s ease-in-out;
 	-moz-transition: all .2s ease-in-out;
 	-o-transition: all .1s ease-in-out;
 	transition: all .1s ease-in-out;
+}
+
+@mixin offScreen($value: -250%){
+	-moz-transform: translatey($value);
+	-ms-transform: translatey($value);
+	-o-transform: translatey($value);
+	-webkit-transform: translatey($value);
+	transform: translatey($value);
 }
 
 %button{

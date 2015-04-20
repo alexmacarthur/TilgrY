@@ -3,6 +3,9 @@
 #buffer-extension-hover-button {
   display: none !important; }
 
+.overflow-hidden {
+  overflow: hidden; }
+
 .cta-bar a, .contact-form input[type=submit], .contact-form textarea[type=submit] {
   border: 2px solid white;
   border-radius: 4px;
@@ -1042,8 +1045,9 @@ nav .container {
   .home-slider div, .home-slider ul, .home-slider li, .home-slider img {
     height: 100%; }
   .home-slider img {
-    width: 100%;
-    height: auto; }
+    min-width: 100%;
+    height: auto;
+    min-height: 100%; }
   .home-slider .caption-wrap {
     background: -webkit-linear-gradient(rgba(56, 57, 56, 0.7), rgba(56, 57, 56, 0.7));
     background: -mox-linear-gradient(rgba(56, 57, 56, 0.7), rgba(56, 57, 56, 0.7));
@@ -1244,8 +1248,37 @@ footer {
   margin: 15px auto 0 auto;
   padding: 10px; }
 
-.mobile-menu-toggle, .mobile-nav-links {
+.mobile-menu-toggle {
   display: none; }
+
+.mobile-menu-toggle {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 1; }
+  .mobile-menu-toggle:hover {
+    cursor: pointer; }
+
+#close-mobile-menu {
+  display: none;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 1; }
+  #close-mobile-menu:hover {
+    cursor: pointer; }
+  #close-mobile-menu svg {
+    height: 100%;
+    width: 100%; }
+
+.open-mobile-menu {
+  -moz-transform: translatey(0) !important;
+  -ms-transform: translatey(0) !important;
+  -o-transform: translatey(0) !important;
+  -webkit-transform: translatey(0) !important;
+  transform: translatey(0) !important; }
 
 .header-banner {
   width: 100%;
@@ -1360,6 +1393,48 @@ footer {
   .vision-statement {
     width: 60%; }
     .vision-statement span {
-      font-size: 18px; } }
+      font-size: 18px; }
+
+  .home-slider .caption-wrap .caption {
+    width: 90%; } }
+@media screen and (max-width: 640px) {
+  .top-bar {
+    height: 175px; }
+
+  .logo, .vision-statement {
+    width: 100%; }
+
+  .vision-statement {
+    height: 55px; }
+    .vision-statement span {
+      text-align: center; }
+
+  .logo {
+    height: 100px; }
+    .logo svg {
+      margin: 0 auto; }
+
+  .mobile-menu-toggle {
+    display: block; }
+
+  .nav-links {
+    -moz-transform: translatey(-250%);
+    -ms-transform: translatey(-250%);
+    -o-transform: translatey(-250%);
+    -webkit-transform: translatey(-250%);
+    transform: translatey(-250%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(246, 246, 246, 0.95);
+    z-index: 1;
+    display: block; }
+    .nav-links li {
+      width: 100%;
+      color: #55886f; }
+      .nav-links li:hover {
+        color: white; } }
 
 /*# sourceMappingURL=style.css.map */
