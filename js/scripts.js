@@ -124,11 +124,25 @@ $(function() {
         
 })(jQuery);
 
-    var windowHeight = $(window).height();
+if(window.innerWidth <= 640){
+        var windowHeight = $(window).height();
         elementHeight = $('.nav-links li').height() * 5;
         newMargin = (windowHeight - elementHeight)/2;
 
-    $('.nav-links li:first-of-type').css('margin-top', newMargin);
+        $('.nav-links li:first-of-type').css('margin-top', newMargin);
+    }
+
+window.onresize = function(event) {
+    if(window.innerWidth <= 640){
+        var windowHeight = $(window).height();
+        elementHeight = $('.nav-links li').height() * 5;
+        newMargin = (windowHeight - elementHeight)/2;
+
+        $('.nav-links li:first-of-type').css('margin-top', newMargin);
+    } else {
+        $('.nav-links li:first-of-type').css('margin-top', 0);
+    }
+};    
 
 // when scrolling, checks if element is visible. if visibile, fade in.
 // $(window).scroll(function(event) {
