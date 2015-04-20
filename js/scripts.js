@@ -26,13 +26,6 @@ function initMobileMenu(){
     });
 } 
 
-function initMobileLinkResize(){
-    var windowHeight = $(window).height();
-    var linksHeight = $('.mobile-nav-links ul').height();
-    var newMargin = (windowHeight - linksHeight)/2;
-    $('.mobile-nav-links ul').css("margin-top",newMargin);
-}
-
 /* ajax contact form */
 $(function() {
 
