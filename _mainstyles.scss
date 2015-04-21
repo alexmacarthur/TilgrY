@@ -337,6 +337,7 @@ footer{
 }
 	.footer-container{
 		@extend %vertical-align;
+		padding-top: 25px;
 	}
 		.footer-logo-holder{
 			position:relative;

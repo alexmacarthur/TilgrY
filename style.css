@@ -1227,6 +1227,9 @@ footer {
   color: white;
   margin-top: 50px; }
 
+.footer-container {
+  padding-top: 25px; }
+
 .footer-logo-holder {
   position: relative;
   height: 75px;

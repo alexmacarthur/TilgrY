@@ -27,7 +27,7 @@
 		<div class="cta-bar first-cta-bar">
 			<div class="container cta-container">
 				<div class="four columns">
-					<a class="cta-button involved-cta-button" href="<?php echo get_site_url(); ?>getinvolved">Get Involved Today.</a>
+					<a class="cta-button involved-cta-button" href="<?php echo get_site_url(); ?>/getinvolved">Get Involved Today.</a>
 				</div>
 				<div class="eight columns">
 					<h2>Help us change lives in Burkina Faso.</h2>
@@ -74,7 +74,7 @@
 					<h2>Help us change lives in Burkina Faso.</h2>
 				</div>
 				<div class="four columns">
-					<a class="cta-button donate-cta-button" href="<?php echo get_site_url(); ?>donate">Get Involved Today.</a>
+					<a class="cta-button donate-cta-button" href="<?php echo get_site_url(); ?>/donate">Get Involved Today.</a>
 				</div>
 			</div>
 		</div>
