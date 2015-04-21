@@ -58,6 +58,9 @@
 			  font-size: 35px;
 		}
 	}
+	a.donate-button{
+		width: 75%;
+	}
 }
 
 @media screen and (max-width: 776px){
@@ -99,6 +102,7 @@
 			height: 55px;
 			span{
 				text-align:center;
+				font-size: 16px;
 			}
 		}
 		.logo{
@@ -196,5 +200,17 @@
 	}
 	.page-box{
 		padding: 20px;
+	}
+	.donate-options{
+		div.columns{
+			width:100%;
+			margin: 0 auto;
+			&:first-child{
+				margin-bottom: 25px;
+			}
+		}
+		svg{
+			width: 150px;
+		}
 	}
 }

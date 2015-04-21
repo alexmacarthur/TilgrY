@@ -6,7 +6,7 @@
 .overflow-hidden {
   overflow: hidden; }
 
-.cta-bar a, .contact-form input[type=submit], .contact-form textarea[type=submit] {
+.cta-bar a, .contact-form input[type=submit], .contact-form textarea[type=submit], a.donate-button {
   border: 2px solid white;
   border-radius: 4px;
   text-align: center;
@@ -1147,7 +1147,7 @@ div.aim-icon {
     transform: translate(0, -5px); }
 
 .work-box {
-  height: 300px;
+  height: 325px;
   padding: 10px 25px 75px 25px; }
   .work-box div {
     height: 100%;
@@ -1370,17 +1370,41 @@ footer {
 .error {
   background: #8c4646; }
 
+.donate-header {
+  text-align: center;
+  margin-bottom: 20px; }
+
 .donate-options {
   text-align: center; }
   .donate-options h3 {
     border: none;
     text-align: center;
     color: #55886f; }
+  .donate-options span {
+    color: #3f6552;
+    line-height: 26px;
+    font-size: 21px;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; }
   .donate-options svg {
     margin: 0 auto;
     width: 45%; }
     .donate-options svg:hover .svg-background {
       fill: #55886f; }
+    .donate-options svg:hover .svg-icon {
+      fill: white; }
+
+a.donate-button {
+  border-color: #55886f;
+  display: block;
+  width: 50%;
+  font-size: 25px;
+  margin: 0 auto 15px auto; }
+  a.donate-button:hover {
+    background: #55886f;
+    color: white; }
 
 /* Wordpress class tweaks */
 .aligncenter {
@@ -1434,7 +1458,10 @@ footer {
     margin: 0; }
 
   .cta-bar h2 {
-    font-size: 35px; } }
+    font-size: 35px; }
+
+  a.donate-button {
+    width: 75%; } }
 @media screen and (max-width: 776px) {
   .nav-links li {
     font-size: 16px; }
@@ -1463,7 +1490,8 @@ footer {
   .vision-statement {
     height: 55px; }
     .vision-statement span {
-      text-align: center; }
+      text-align: center;
+      font-size: 16px; }
 
   .logo {
     height: 100px; }
@@ -1561,6 +1589,14 @@ footer {
     display: block; }
 
   .page-box {
-    padding: 20px; } }
+    padding: 20px; }
+
+  .donate-options div.columns {
+    width: 100%;
+    margin: 0 auto; }
+    .donate-options div.columns:first-child {
+      margin-bottom: 25px; }
+  .donate-options svg {
+    width: 150px; } }
 
 /*# sourceMappingURL=style.css.map */

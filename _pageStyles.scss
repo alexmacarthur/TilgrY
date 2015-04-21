@@ -106,12 +106,26 @@
 		background: $red;
 	}
 
+.donate-header{
+	text-align:center;
+	margin-bottom:20px;
+}
+
 .donate-options{
 	text-align:center;
 	h3{
 		border:none;
 		text-align:center;
 		color: $green;
+	}
+	span{
+		color: $dark-green;
+		line-height: 26px;
+  		font-size: 21px;
+  		display:block;
+  		width: 80%;
+  		margin: 0 auto;
+  		text-align:center;
 	}
 	svg{
 		margin: 0 auto;
@@ -120,9 +134,25 @@
 			.svg-background{
 				fill: $green;
 			}
+			.svg-icon{
+				fill: white;
+			}
 		}
 	}
 }
+	a.donate-button{
+		@extend %button;
+		border-color: $green;
+		display:block;
+		width: 50%;
+		font-size: 25px;
+		margin: 0 auto 15px auto;
+		&:hover{
+			background: $green;
+			color:white;
+		}
+	}
+
 
 /* Wordpress class tweaks */
 .aligncenter {

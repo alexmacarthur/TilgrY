@@ -85,7 +85,7 @@
 				<label class="box-label home-box-label">Our Work<?php get_template_part('img/inline', 'edge.svg'); ?></label>
 
 				<div class="row">
-					<div class="five columns">
+					<div class="six columns">
 						<p>
 							The traditional financial institutions have literally omitted the women in general and rural women in particular, other conent goes here too.
 						</p>
@@ -96,7 +96,7 @@
 						</ul>
 					</div>
 
-					<div class="seven columns work-image">
+					<div class="six columns work-image">
 					
 					</div>
 				</div>
