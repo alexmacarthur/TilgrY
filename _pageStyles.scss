@@ -45,6 +45,10 @@
 	ul{
 		@extend p;
 	}
+	img{
+		max-width: 100%;
+  		height: auto;
+	}
 }
 	.page-box{
 		  padding: 25px;
@@ -113,8 +117,8 @@
 		margin: 0 auto;
 		width: 45%;
 		&:hover{
-			path{
-				fill: $dark-green;
+			.svg-background{
+				fill: $green;
 			}
 		}
 	}

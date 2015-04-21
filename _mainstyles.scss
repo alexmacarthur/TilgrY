@@ -5,6 +5,25 @@ $background: #f6f6f6;
 $red: #8c4646;
 $darkred: #482424;
 
+// .construction{
+// 	position:absolute;
+// 	z-index: 100;
+// 	background: rgba($background, .9);
+// 	width:100%;
+// 	height:100%;
+// 	overflow:hidden!important;
+// 	span{
+// 		@extend %vertical-align;
+// 		display:block;
+// 		width:100%;
+// 		text-align:center;
+// 		font-size: 20px;
+// 		svg{
+// 			width: 200px;
+// 		}
+// 	}
+// }
+
 *{
 	@include transitionSpeed;
 	font-family: 'Alegreya Sans', sans-serif;
@@ -352,6 +371,8 @@ footer{
 
 .mobile-menu-toggle{
 	display:none;
+	width: 40px;
+	height: 40px;
 }
 .mobile-nav-links{
 	display:none!important;

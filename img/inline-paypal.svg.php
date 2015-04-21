@@ -6,7 +6,7 @@
 <title></title>
 <g id="gloss">
 	<g id="paypal">
-		<path fill="none" stroke="#55886F" stroke-miterlimit="10" d="M30,60c16.568,0,30-13.432,30-30S46.568,0,30,0S0,13.432,0,30
+		<path fill="none" class="svg-background" stroke="#55886F" stroke-miterlimit="10" d="M30,60c16.568,0,30-13.432,30-30S46.568,0,30,0S0,13.432,0,30
 			S13.432,60,30,60z"/>
 	</g>
 </g>

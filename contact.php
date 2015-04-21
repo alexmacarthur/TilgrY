@@ -16,11 +16,11 @@
 	 		<div class="box page-box">
 
 	 			<div class="row">
-		 			<div class="five columns">
+		 			<div class="five columns contact-half">
 		 				<?php the_content(); ?>
 		 			</div>
 
-		 			<div class="seven columns">
+		 			<div class="seven columns contact-half">
 		 				<h3>Fill Out the Form</h3>
 		 				<div id="form-messages"></div>
 		 				<!-- form to email -->

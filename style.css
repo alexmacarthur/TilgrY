@@ -1251,7 +1251,9 @@ footer {
   padding: 10px; }
 
 .mobile-menu-toggle {
-  display: none; }
+  display: none;
+  width: 40px;
+  height: 40px; }
 
 .mobile-nav-links {
   display: none !important; }
@@ -1321,6 +1323,9 @@ footer {
     color: #55886f; }
     .page-main a:hover {
       color: #3f6552; }
+  .page-main img {
+    max-width: 100%;
+    height: auto; }
 
 .page-box {
   padding: 25px; }
@@ -1374,8 +1379,8 @@ footer {
   .donate-options svg {
     margin: 0 auto;
     width: 45%; }
-    .donate-options svg:hover path {
-      fill: #3f6552; }
+    .donate-options svg:hover .svg-background {
+      fill: #55886f; }
 
 /* Wordpress class tweaks */
 .aligncenter {
@@ -1395,7 +1400,17 @@ footer {
       font-size: 20px; }
 
   .cta-container {
-    width: 90%; } }
+    width: 90%; }
+
+  .page-container {
+    width: 90%; }
+
+  .page-box .contact-half {
+    width: 48%; }
+    .page-box .contact-half:first-child {
+      margin: 0 2% 0 0; }
+    .page-box .contact-half:last-child {
+      margin: 0; } }
 @media screen and (max-width: 992px) {
   .container {
     width: 95%; }
@@ -1425,7 +1440,19 @@ footer {
     font-size: 16px; }
 
   .cta-bar h2 {
-    font-size: 30px; } }
+    font-size: 30px; }
+
+  .page-main {
+    margin-top: 115px; }
+
+  .header-banner-container {
+    height: 115px; }
+
+  .page-box .contact-half {
+    width: 100%;
+    margin: 0; }
+    .page-box .contact-half p, .page-box .contact-half .page-main ul, .page-main .page-box .contact-half ul {
+      margin-bottom: 10px; } }
 @media screen and (max-width: 640px) {
   .top-bar {
     height: 175px; }
@@ -1441,6 +1468,9 @@ footer {
   .logo {
     height: 100px; }
     .logo svg {
+      margin: 0 auto; }
+    .logo a {
+      width: 50%;
       margin: 0 auto; }
 
   .mobile-menu-toggle {
@@ -1461,7 +1491,7 @@ footer {
     width: 100%;
     height: 100%;
     background: rgba(246, 246, 246, 0.95);
-    z-index: 1;
+    z-index: 2;
     display: block; }
     .nav-links li {
       width: 100%;
@@ -1521,6 +1551,16 @@ footer {
       -ms-transform: translate(0, 0);
       transform: translate(0, 0); }
     .work-box div {
-      width: 100%; } }
+      width: 100%; }
+
+  .learn-more {
+    width: 100%;
+    text-align: center; }
+
+  #close-mobile-menu {
+    display: block; }
+
+  .page-box {
+    padding: 20px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -16,7 +16,15 @@
 
 </head>
 
-<body class="no-js">
+<body class="no-js construction">
+
+	<!-- <div class="construction">
+		
+		<span><?php /*get_template_part('img/inline', 'logo.svg');*/ ?>
+		<br>
+		This site is currently under construction.</span>
+
+	</div> -->
 
 	<div class="wrapper">
 	
