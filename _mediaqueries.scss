@@ -109,6 +109,7 @@
 			height: 100px;
 			svg{
 				margin: 0 auto;
+				height:auto;
 			}
 			a{
 				width: 50%;
@@ -148,8 +149,8 @@
 			.caption{
 				@include translateXY(-50%, 0);
 				top: 0;
-				font-size: 18px;
-  				line-height: 21px;
+				  font-size: 16px;
+  				line-height: 19px;
   				  margin-top: 35px;
 			}
 		}
@@ -174,6 +175,7 @@
 				top: auto;
 			}
 	.aims-box{
+		padding-top: 0;
 		div.columns{
 			width:100%;
 			margin: 0;
@@ -194,6 +196,8 @@
 	.learn-more{
 		width:100%;
 		text-align:center;
+		font-size: 17px;
+		right:0;
 	}
 	#close-mobile-menu{
 		display:block;

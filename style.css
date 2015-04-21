@@ -1122,6 +1122,9 @@ nav .container {
   .learn-more:hover {
     color: #482424; }
 
+.about-box, .aims-box {
+  margin-bottom: 14px; }
+
 .aims-box {
   text-align: center; }
   .aims-box span, .aims-box p, .aims-box .page-main ul, .page-main .aims-box ul {
@@ -1500,7 +1503,8 @@ a.donate-button {
   .logo {
     height: 100px; }
     .logo svg {
-      margin: 0 auto; }
+      margin: 0 auto;
+      height: auto; }
     .logo a {
       width: 50%;
       margin: 0 auto; }
@@ -1542,8 +1546,8 @@ a.donate-button {
       -ms-transform: translate(-50%, 0);
       transform: translate(-50%, 0);
       top: 0;
-      font-size: 18px;
-      line-height: 21px;
+      font-size: 16px;
+      line-height: 19px;
       margin-top: 35px; }
 
   .cta-bar {
@@ -1568,9 +1572,11 @@ a.donate-button {
     transform: translate(0, 0);
     top: auto; }
 
-  .aims-box div.columns {
-    width: 100%;
-    margin: 0; }
+  .aims-box {
+    padding-top: 0; }
+    .aims-box div.columns {
+      width: 100%;
+      margin: 0; }
 
   div.aim-icon {
     height: 75px; }
@@ -1587,7 +1593,9 @@ a.donate-button {
 
   .learn-more {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    font-size: 17px;
+    right: 0; }
 
   #close-mobile-menu {
     display: block; }
