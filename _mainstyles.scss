@@ -330,10 +330,11 @@ footer{
 	height: 200px;
 	width:100%;
 	background: $gray;
-	padding: 25px;
+	padding: 25px 0 0 0;
 	text-align:center;
 	color:white;
 	margin-top:50px;
+	box-sizing:content-box;
 }
 	.footer-container{
 		@extend %vertical-align;
