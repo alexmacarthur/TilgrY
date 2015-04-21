@@ -5,24 +5,14 @@ $background: #f6f6f6;
 $red: #8c4646;
 $darkred: #482424;
 
-// .construction{
-// 	position:absolute;
-// 	z-index: 100;
-// 	background: rgba($background, .9);
-// 	width:100%;
-// 	height:100%;
-// 	overflow:hidden!important;
-// 	span{
-// 		@extend %vertical-align;
-// 		display:block;
-// 		width:100%;
-// 		text-align:center;
-// 		font-size: 20px;
-// 		svg{
-// 			width: 200px;
-// 		}
-// 	}
-// }
+.construction{
+	width:100%;
+	padding: 10px;
+	background: $red;
+	text-align:center;
+	color:white;
+	font-weight: 500;
+}
 
 *{
 	@include transitionSpeed;

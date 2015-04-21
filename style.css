@@ -951,6 +951,14 @@ there.
 /* Larger than tablet */
 /* Larger than desktop */
 /* Larger than Desktop HD */
+.construction {
+  width: 100%;
+  padding: 10px;
+  background: #8c4646;
+  text-align: center;
+  color: white;
+  font-weight: 500; }
+
 * {
   -webkit-transition: all .1s ease-in-out;
   -moz-transition: all .2s ease-in-out;
