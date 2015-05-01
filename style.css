@@ -1341,6 +1341,13 @@ footer {
   .page-main img {
     max-width: 100%;
     height: auto; }
+  .page-main .green-page-button {
+    border: 2px solid #55886f;
+    border-radius: 6px;
+    padding: 5px 15px; }
+    .page-main .green-page-button:hover {
+      background: #55886f;
+      color: white; }
 
 .page-box {
   padding: 25px; }
@@ -1421,6 +1428,17 @@ a.donate-button {
     background: #55886f;
     color: white; }
 
+.more-involved {
+  color: #383938;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 45px auto 0 auto;
+  padding-top: 15px;
+  font-size: 25px;
+  border-top: 2px solid rgba(85, 136, 111, 0.4);
+  width: 75%; }
+
 /* Wordpress class tweaks */
 .aligncenter {
   display: block;
@@ -1449,7 +1467,10 @@ a.donate-button {
     .page-box .contact-half:first-child {
       margin: 0 2% 0 0; }
     .page-box .contact-half:last-child {
-      margin: 0; } }
+      margin: 0; }
+
+  .work-box {
+    height: 365px; } }
 @media screen and (max-width: 992px) {
   .container {
     width: 95%; }
@@ -1494,7 +1515,10 @@ a.donate-button {
     width: 100%;
     margin: 0; }
     .page-box .contact-half p, .page-box .contact-half .page-main ul, .page-main .page-box .contact-half ul {
-      margin-bottom: 10px; } }
+      margin-bottom: 10px; }
+
+  .work-box {
+    height: 465px; } }
 @media screen and (max-width: 640px) {
   .top-bar {
     height: 175px; }

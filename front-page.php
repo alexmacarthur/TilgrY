@@ -6,20 +6,27 @@
 ?>
 
 <!-- if on the home page, call the 'home' header -->
-<?php get_header()?>
+<?php get_header(); ?>
 
 	<main>
 
-		<?php 
-		    echo do_shortcode("[metaslider id=4]"); 
-		?>
+	<?php 
+		$thisURL = get_site_url();
+		$contain = strpos($thisURL, "macarthur");
+
+		if($contain ==! 0){
+			echo do_shortcode("[metaslider id=4]"); 
+		} else {
+			echo do_shortcode("[metaslider id=21]"); 
+		}
+	?>
 
 		<div class="container home-container">
 
 			<div class="box home-box about-box">.
 				<label class="box-label home-box-label">About Us<?php get_template_part('img/inline', 'edge.svg'); ?></label>
 				<span class="home-span">TilgrY is a social venture that mobilizes resources in rural communities to impact women’s social and economic conditions, in order to reach sustainable development of entire communities in Burkina Faso.</span>
-				<a href="#" class="learn-more">Learn More About Us</a>
+				<a href="<?php echo get_site_url(); ?>/about" class="learn-more">Learn More About Us</a>
 			</div>
 
 		</div>
@@ -27,7 +34,7 @@
 		<div class="cta-bar first-cta-bar">
 			<div class="container cta-container">
 				<div class="four columns">
-					<a class="cta-button involved-cta-button" href="<?php echo get_site_url(); ?>/getinvolved">Get Involved Today.</a>
+					<a class="cta-button involved-cta-button" href="<?php echo get_site_url(); ?>/donate">Help Support Us</a>
 				</div>
 				<div class="eight columns">
 					<h2>Help us change lives in Burkina Faso.</h2>
@@ -71,7 +78,7 @@
 		<div class="cta-bar second-cta-bar">
 			<div class="container cta-container">
 				<div class="eight columns">
-					<h2>Help us change lives in Burkina Faso.</h2>
+					<h2>There are plenty of ways to help.</h2>
 				</div>
 				<div class="four columns">
 					<a class="cta-button donate-cta-button" href="<?php echo get_site_url(); ?>/donate">Get Involved Today.</a>
@@ -87,12 +94,12 @@
 				<div class="row">
 					<div class="six columns">
 						<p>
-							The traditional financial institutions have literally omitted the women in general and rural women in particular, other conent goes here too.
+							The traditional financial institutions in Burkina Faso have literally omitted the women in general and rural women in particular, making it difficult for them to pursue entreprenurial and personal ventures they feel passionate about. TilgrY provides a variety of growing services to help women improve their quality of living. They include: 
 						</p>
 						<ul class="work-list">
-							<li>&#8212; we do this.</li>
-							<li>&#8212; we do this.</li>
-							<li>&#8212; we do this.</li>
+							<li>&#8212; microfinancing options</li>
+							<li>&#8212; savings accounts</li>
+							<li>&#8212; technical &amp; material support</li>
 						</ul>
 					</div>
 
@@ -101,7 +108,7 @@
 					</div>
 				</div>
 				
-				<a href="#" class="learn-more">Learn More About Our Work</a>
+				<a href="<?php echo get_site_url(); ?>/services" class="learn-more">Learn More About Our Work</a>
 			</div>
 
 		</div>
