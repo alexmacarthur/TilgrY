@@ -20,7 +20,7 @@
 			</div>
 		</footer>
 				
-		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
 
 		<script>
@@ -32,6 +32,8 @@
 			ga('create', 'UA-62100019-1', 'auto');
 			ga('send', 'pageview');
 		</script>
+
+		<?php wp_footer(); ?>
 
 	</body>
 </html>

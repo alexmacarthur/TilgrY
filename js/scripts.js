@@ -2,7 +2,7 @@ $('body').removeClass('no-js');
 
 $( document ).ready(function(){
     initMobileMenu();
-    initMobileLinkResize();
+    // initMobileLinkResize();
 });
 
 window.onresize = function(){

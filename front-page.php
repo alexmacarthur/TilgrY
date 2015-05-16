@@ -11,6 +11,7 @@
 	<main>
 
 	<?php 
+		// loads different slider numbers based on if it's the dev site or live site
 		$thisURL = get_site_url();
 		$contain = strpos($thisURL, "macarthur");
 
