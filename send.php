@@ -35,7 +35,7 @@
         }
 
         // Set the recipient email address.
-        $recipient = "alex@macarthur.me";
+        $recipient = "tilgry@tilgry.org,donaccesspato@gmail.com,alex@macarthur.me";
 
         // Set the email subject.
         $subject = "TilgrY Online Form Submitted";

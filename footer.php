@@ -11,7 +11,7 @@
 					<li>Our Approach<a href="<?php echo get_site_url(); ?>/approach"></a></li>
 					<li>Our Services<a href="<?php echo get_site_url(); ?>/services"></a></li>
 					<li>Contact Us<a href="<?php echo get_site_url(); ?>/contact"></a></li>
-					<li>Support Us<a href="<?php echo get_site_url(); ?>/donate"></a></li>
+					<li>Get Involved<a href="<?php echo get_site_url(); ?>/getinvolved"></a></li>
 				</ul>
 				
 				<span class="copyright">

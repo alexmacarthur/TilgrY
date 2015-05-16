@@ -1,5 +1,9 @@
 <?php
 
+	add_theme_support( 'post-thumbnails' ); 
+
+	add_filter('show_admin_bar', '__return_false');
+
 	/**
 	 * Add jquery support
 	 */
@@ -7,7 +11,7 @@
 	     wp_enqueue_script( 'jquery' );
 	}
 	add_action( 'wp_enqueue_scripts', 'jquery_scripts' );
-	
+
 	function remove_menus(){
 		remove_menu_page( 'edit.php' );   
 		remove_menu_page( 'edit-comments.php' ); 

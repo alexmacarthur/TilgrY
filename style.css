@@ -1,12 +1,12 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700,800);
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,400italic,500,500italic,700,800);
 #buffer-extension-hover-button {
   display: none !important; }
 
 .overflow-hidden {
   overflow: hidden; }
 
-.cta-bar a, .contact-form input[type=submit], .contact-form textarea[type=submit], a.donate-button {
+.cta-bar a, .contact-form input[type=submit], .contact-form textarea[type=submit], .donate-options div .donate-button {
   border: 2px solid white;
   border-radius: 4px;
   text-align: center;
@@ -1018,8 +1018,13 @@ nav .container {
   .vision-statement span {
     display: block;
     text-align: right;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 100%; }
+    .vision-statement span p, .vision-statement span .page-main ul, .page-main .vision-statement span ul {
+      font-style: italic;
+      color: rgba(56, 57, 56, 0.8);
+      font-size: 20px;
+      margin-top: 5px; }
 
 .nav-links-bar {
   background: -webkit-linear-gradient(rgba(85, 136, 111, 0), rgba(0, 0, 0, 0.4)), #55886f;
@@ -1046,27 +1051,36 @@ nav .container {
     .nav-links li:hover {
       background: rgba(85, 136, 111, 0.5); }
 
-.home-slider {
+div.home-slider {
   height: 400px;
   overflow: hidden;
   position: relative; }
-  .home-slider div, .home-slider ul, .home-slider li, .home-slider img {
+  div.home-slider div, div.home-slider ul, div.home-slider li, div.home-slider img {
     height: 100%; }
-  .home-slider img {
+  div.home-slider ul.slides li {
+    height: 100%;
+    overflow: hidden; }
+  div.home-slider img {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
     min-width: 100%;
     height: auto;
-    min-height: 100%; }
-  .home-slider .caption-wrap {
-    background: -webkit-linear-gradient(rgba(56, 57, 56, 0.7), rgba(56, 57, 56, 0.7));
-    background: -mox-linear-gradient(rgba(56, 57, 56, 0.7), rgba(56, 57, 56, 0.7));
-    background: -o-linear-gradient(rgba(56, 57, 56, 0.7), rgba(56, 57, 56, 0.7));
-    background: -o-linear-gradient(rgba(56, 57, 56, 0.7), rgba(56, 57, 56, 0.7));
+    min-height: 100%;
+    margin: -5px -10px -10px -5px; }
+  div.home-slider .caption-wrap {
+    background: -webkit-linear-gradient(rgba(56, 57, 56, 0.85), rgba(56, 57, 56, 0.85));
+    background: -mox-linear-gradient(rgba(56, 57, 56, 0.85), rgba(56, 57, 56, 0.85));
+    background: -o-linear-gradient(rgba(56, 57, 56, 0.85), rgba(56, 57, 56, 0.85));
+    background: -o-linear-gradient(rgba(56, 57, 56, 0.85), rgba(56, 57, 56, 0.85));
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%; }
-    .home-slider .caption-wrap .caption {
+    div.home-slider .caption-wrap .caption {
       -webkit-transform: translate(-50%, -50%);
       -moz-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -1074,7 +1088,6 @@ nav .container {
       left: 50%;
       top: 50%;
       position: absolute;
-      bottom: 0;
       color: white;
       width: 50%;
       height: auto;
@@ -1158,11 +1171,17 @@ div.aim-icon {
     transform: translate(0, -5px); }
 
 .work-box {
-  height: 325px;
-  padding: 10px 25px 75px 25px; }
+  height: auto;
+  padding: 10px 25px 45px 25px; }
   .work-box div {
     height: 100%;
     min-height: 250px; }
+  .work-box .row.no-center {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    top: auto; }
   .work-box p, .work-box .page-main ul, .page-main .work-box ul {
     font-size: 20px;
     line-height: 22px;
@@ -1177,9 +1196,9 @@ div.aim-icon {
 .work-image {
   -webkit-clip-path: polygon(5% 0, 100% 0, 100% 100%, 5% 100%, 5% 60%, 0 50%, 5% 40%);
   clip-path: polygon(5% 0, 100% 0, 100% 100%, 5% 100%, 5% 60%, 0 50%, 5% 40%);
-  background: url("http://www.tilgry.org/wp-content/themes/tilgry-theme/img/people.jpg");
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  min-height: 350px !important; }
 
 .cta-bar {
   width: 100%;
@@ -1305,7 +1324,9 @@ footer {
 .header-banner {
   width: 100%;
   height: 400px;
-  background: url("http://www.tilgry.org/wp-content/themes/tilgry-theme/img/pageimage1.jpg");
+  background: url("http://tilgry.org/wp-content/uploads/2015/05/image2.jpeg") no-repeat;
+  background-size: cover;
+  background-position-y: 29%;
   position: absolute;
   text-align: center; }
 
@@ -1348,9 +1369,24 @@ footer {
     .page-main .green-page-button:hover {
       background: #55886f;
       color: white; }
+  .page-main .back-home {
+    position: absolute;
+    right: 0;
+    top: -35px;
+    color: white;
+    z-index: 10;
+    font-size: 20px; }
+    .page-main .back-home:hover {
+      color: white;
+      top: -38px; }
 
 .page-box {
   padding: 25px; }
+  .page-box img {
+    box-shadow: 0px 0px 3px 0px rgba(56, 57, 56, 0.5);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(56, 57, 56, 0.5);
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(56, 57, 56, 0.5);
+    margin: 15px; }
 
 .mission-statement {
   font-size: 30px;
@@ -1418,15 +1454,24 @@ footer {
     .donate-options svg:hover .svg-icon {
       fill: white; }
 
-a.donate-button {
+.donate-options form {
+  margin: 0; }
+.donate-options div .donate-button {
   border-color: #55886f;
   display: block;
   width: 50%;
+  height: 50px;
   font-size: 25px;
-  margin: 0 auto 15px auto; }
-  a.donate-button:hover {
+  margin: 0 auto 15px auto;
+  font-weight: 400;
+  text-transform: none; }
+  .donate-options div .donate-button:visited {
+    color: #55886f; }
+  .donate-options div .donate-button:hover {
     background: #55886f;
     color: white; }
+.donate-options div input, .donate-options div .contact-form textarea, .contact-form .donate-options div textarea {
+  color: #55886f; }
 
 .more-involved {
   color: #383938;
@@ -1442,13 +1487,18 @@ a.donate-button {
 /* Wordpress class tweaks */
 .aligncenter {
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto !important; }
 
 .alignleft {
   float: left; }
 
 .alignright {
   float: right; }
+
+.noBoxShadow {
+  box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important; }
 
 @media screen and (max-width: 1200px) {
   .nav-links {

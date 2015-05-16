@@ -80,9 +80,15 @@ nav{
 			span{
 				display:block;
 				text-align:right;
-				font-size: 20px;
+				font-size: 22px;
   				line-height: 100%;
 				@extend %vertical-align;
+				p{
+					font-style: italic;
+					color:rgba($gray, .8);
+					font-size: 20px;
+  					margin-top: 5px;
+				}
 			}
 		}
 
@@ -116,20 +122,28 @@ nav{
 	  		}
 		}
 
-.home-slider{
+div.home-slider{
 	height: 400px;
 	overflow:hidden;
 	position:relative;
 	div, ul, li, img{
 		height:100%;
 	}
+	ul.slides{
+		li{
+			height:100%;
+			overflow:hidden;
+		}
+	}
 	img{
-		  min-width: 100%;
-		  height: auto;
-		  min-height: 100%;
+		@include blur;
+		min-width: 100%;
+		height: auto;
+		min-height: 100%;
+		margin: -5px -10px -10px -5px;
 	}
 	.caption-wrap{
-		@include linearGradientNoBackground(rgba($gray, .7), rgba($gray, .7));
+		@include linearGradientNoBackground(rgba($gray, .85), rgba($gray, .85));
 		position:absolute;
 		top: 0;
 		left: 0;
@@ -140,7 +154,6 @@ nav{
 			left:50%;
 			top:50%;
 			position:absolute;
-			bottom:0;
 			color:white;
 			width: 50%;
 			height: auto;
@@ -229,19 +242,23 @@ nav{
 
 			}
 		.work-box{
-			height: 325px;
-			padding: 10px 25px 75px 25px;
+			height: auto;
+			padding: 10px 25px 45px 25px;
 			div{
 				height:100%;
 				  min-height: 250px;
 			}
 			.row{
 				@extend %vertical-align;
+				&.no-center{
+					@include translateXY(0,0);
+					top:auto;
+				}
 			}
 			p{
-				  font-size: 20px;
+				font-size: 20px;
   				line-height: 22px;
-  				  margin-bottom: 0;
+  				margin-bottom: 0;
 			}
 		}
 			.work-list{
@@ -252,13 +269,10 @@ nav{
 			}
 			.work-image{
 				@include clipPath;
-				background: url('http://www.tilgry.org/wp-content/themes/tilgry-theme/img/people.jpg');
 				background-size:cover;
 				background-position:center;
-
+				min-height: 350px!important;
 			}
-
-
 
 .cta-bar{
 	width: 100%;

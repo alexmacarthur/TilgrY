@@ -17,11 +17,11 @@
 
 <body class="no-js">
 
-	<div class="construction">
+<!-- 	<div class="construction">
 		
 		This site is currently under construction. Thank you for understanding!</span>
 
-	</div>
+	</div> -->
 
 	<div class="wrapper">
 	
@@ -42,7 +42,7 @@
 
 					<div class="vision-statement">
 						<span>
-							A vision for fostering sustainable development and a more efficient means of conducting business affairs in order to reduce poverty in rural communities in Burkina Faso.
+							A vision for fostering sustainable development and a more efficient means of conducting business affairs in order to reduce poverty in rural communities in Burkina Faso. <p>Join us today and be part of the change you want to see in the world!</p>
 						</span>
 					</div>
 
