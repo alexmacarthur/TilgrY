@@ -1071,10 +1071,6 @@ div.home-slider {
     min-height: 100%;
     margin: -5px -10px -10px -5px; }
   div.home-slider .caption-wrap {
-    background: -webkit-linear-gradient(rgba(56, 57, 56, 0.85), rgba(56, 57, 56, 0.85));
-    background: -mox-linear-gradient(rgba(56, 57, 56, 0.85), rgba(56, 57, 56, 0.85));
-    background: -o-linear-gradient(rgba(56, 57, 56, 0.85), rgba(56, 57, 56, 0.85));
-    background: -o-linear-gradient(rgba(56, 57, 56, 0.85), rgba(56, 57, 56, 0.85));
     position: absolute;
     top: 0;
     left: 0;
@@ -1549,6 +1545,12 @@ footer {
   a.donate-button {
     width: 75%; } }
 @media screen and (max-width: 776px) {
+  .top-bar {
+    height: 150px; }
+
+  .logo svg {
+    height: 65%; }
+
   .nav-links li {
     font-size: 16px; }
 
@@ -1571,22 +1573,25 @@ footer {
     height: 465px; } }
 @media screen and (max-width: 640px) {
   .top-bar {
-    height: 175px; }
+    height: 200px; }
 
   .logo, .vision-statement {
     width: 100%; }
 
   .vision-statement {
-    height: 55px; }
+    height: 95px;
+    margin-top: 7px; }
     .vision-statement span {
       text-align: center;
       font-size: 16px; }
 
   .logo {
-    height: 100px; }
+    height: 100px;
+    height: 70px;
+    margin-top: 15px; }
     .logo svg {
       margin: 0 auto;
-      height: auto; }
+      height: 100%; }
     .logo a {
       width: 50%;
       margin: 0 auto; }
@@ -1620,14 +1625,15 @@ footer {
   .footer-nav-links {
     display: none; }
 
-  .home-slider {
+  div.home-slider {
     height: 250px; }
-    .home-slider .caption-wrap .caption {
+    div.home-slider .caption-wrap .caption {
       -webkit-transform: translate(-50%, 0);
       -moz-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
       transform: translate(-50%, 0);
       top: 0;
+      width: 100%;
       font-size: 16px;
       line-height: 19px;
       margin-top: 35px; }

@@ -68,6 +68,14 @@
 }
 
 @media screen and (max-width: 776px){
+	.top-bar{
+		height: 150px;
+	}
+	.logo{
+		svg{
+			height: 65%;
+		}
+	}
 	.nav-links{
 		li{
 			  font-size: 16px;
@@ -100,13 +108,15 @@
 
 @media screen and (max-width: 640px){
 	.top-bar{
-		height: 175px;
+		height: 200px;
 	}
 		.logo, .vision-statement{
 			width:100%;
+
 		}
 		.vision-statement{
-			height: 55px;
+			height: 95px;
+			margin-top: 7px;
 			span{
 				text-align:center;
 				font-size: 16px;
@@ -114,9 +124,11 @@
 		}
 		.logo{
 			height: 100px;
+			height: 70px;
+  			margin-top: 15px;
 			svg{
 				margin: 0 auto;
-				height:auto;
+				height: 100%;
 			}
 			a{
 				width: 50%;
@@ -150,15 +162,16 @@
 	.footer-nav-links{
 		display:none;
 	}
-	.home-slider{
+	div.home-slider{
 		height: 250px;
 		.caption-wrap{
 			.caption{
 				@include translateXY(-50%, 0);
 				top: 0;
-				  font-size: 16px;
+				width: 100%;
+				font-size: 16px;
   				line-height: 19px;
-  				  margin-top: 35px;
+  				margin-top: 35px;
 			}
 		}
 	}
