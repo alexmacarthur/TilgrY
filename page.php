@@ -41,8 +41,8 @@
 	 	
 	 						<?php get_template_part("img/inline", "mail.svg")?>
 	 						<h3>By Mail</h3>
-	 						<a href="https://www.google.com/maps/place/513+Village+Dr,+Marshall,+MN+56258/@44.45526,-95.769859,17z/data=!3m1!4b1!4m2!3m1!1s0x878a58e249e547df:0x9ac89790dc6d92af" class="donate-button">See a Map</a>
-	 						<span>If you have either financial or material donations you'd like to make, you may also mail your contributions to <br>513 Village Drive, Marshall, MN 56258</span>
+	 						<a href="https://www.google.com/maps/place/Ouagadougou,+Burkina+Faso/@12.358492,-1.5368433,12z/data=!3m1!4b1!4m2!3m1!1s0xe2e95ecceaa44cd:0x799f67799c743b8b" class="donate-button">See a Map</a>
+	 						<span>If you have either financial or material donations you'd like to make, you may also mail your contributions to <br><strong>12 BP 326 Ouaga 12, Ouagadougou, Burkina Faso</strong></span>
 
 	 					</div>
 	 				</div>

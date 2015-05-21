@@ -90,7 +90,7 @@
 		<div class="container home-container">
 
 			<div class="box home-box work-box">.
-				<label class="box-label home-box-label">Our Work<?php get_template_part('img/inline', 'edge.svg'); ?></label>
+				<label class="box-label home-box-label">What's New<?php get_template_part('img/inline', 'edge.svg'); ?></label>
 
 				<div class="row no-center">
 					<div class="six columns">
