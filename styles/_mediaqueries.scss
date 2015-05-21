@@ -149,11 +149,12 @@
 		width: 100%;
 		height: 100%;
 		background: rgba($background, .95);
-		z-index: 2;
+		z-index: 11;
 		display:block;
 		li{
 			width:100%;
 			color: $green;
+			font-size: 23px;
 			&:hover{
 				color:white;
 			}
@@ -166,8 +167,6 @@
 		height: 250px;
 		.caption-wrap{
 			.caption{
-				@include translateXY(-50%, 0);
-				top: 0;
 				width: 100%;
 				font-size: 16px;
   				line-height: 19px;

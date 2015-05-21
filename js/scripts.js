@@ -22,7 +22,7 @@
           function setCSS(){
             // apply relative positioning to parent so 'top' & 'left' values will have correct reference point
             $parent.css({
-                'position'    : 'relative'
+                'position'    : 'absolute'
             });
 
             // apply css to element to center it relative to parent
@@ -59,7 +59,6 @@ $('body').removeClass('no-js');
 
 $( document ).ready(function(){
     initMobileMenu();
-    // initMobileLinkResize();
 });
 
 window.onresize = function(){

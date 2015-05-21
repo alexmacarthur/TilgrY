@@ -151,6 +151,8 @@ div.home-slider{
 		background: rgba(black, .75);
 		.caption{
 			@include translateXY(-50%, -50%);
+			@extend .fadeInUp;
+			@extend .animated;
 			left:50%;
 			top:50%;
 			position:absolute;
