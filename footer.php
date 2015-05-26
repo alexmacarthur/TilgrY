@@ -13,9 +13,11 @@
 					<li>Contact Us<a href="<?php echo get_site_url(); ?>/contact"></a></li>
 					<li>Get Involved<a href="<?php echo get_site_url(); ?>/getinvolved"></a></li>
 				</ul>
+
+				<span class="facebook-link">Follow us on <a href="#">Facebook!</a></span>
 				
 				<span class="copyright">
-					&copy; <?=date('Y')?> All rights reserved.
+					&copy; <?=date('Y')?> All rights reserved. Designed &amp; built by <a href="http://www.macarthur.me">Alex MacArthur</a>.
 				</span>
 			</div>
 		</footer>

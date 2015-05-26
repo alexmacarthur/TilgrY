@@ -1263,6 +1263,15 @@ footer {
   color: white;
   margin-top: 50px;
   box-sizing: content-box; }
+  footer a {
+    color: white; }
+    footer a:hover {
+      color: #55886f; }
+
+.facebook-link {
+  font-style: italic;
+  font-size: 21px;
+  font-weight: 100; }
 
 .footer-container {
   padding-top: 25px; }
