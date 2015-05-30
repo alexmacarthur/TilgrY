@@ -14,7 +14,7 @@
 					<li>Get Involved<a href="<?php echo get_site_url(); ?>/getinvolved"></a></li>
 				</ul>
 
-				<span class="facebook-link">Follow us on <a href="#">Facebook!</a></span>
+				<span class="facebook-link"><a href="https://www.facebook.com/tilgryforbetterlife">Follow us on Facebook!</a></span>
 				
 				<span class="copyright">
 					&copy; <?=date('Y')?> All rights reserved. Designed &amp; built by <a href="http://www.macarthur.me">Alex MacArthur</a>.

@@ -273,7 +273,6 @@ div.home-slider{
 				@include clipPath;
 				background-size:cover;
 				background-position:center;
-				min-height: 350px!important;
 			}
 
 .cta-bar{
@@ -336,7 +335,7 @@ div.home-slider{
 	}
 
 footer{
-	height: 200px;
+	height: 245px;
 	width:100%;
 	background: $gray;
 	padding: 25px 0 0 0;
@@ -358,7 +357,6 @@ footer{
 }
 	.footer-container{
 		@extend %vertical-align;
-		padding-top: 25px;
 	}
 		.footer-logo-holder{
 			position:relative;

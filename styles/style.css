@@ -1203,8 +1203,7 @@ div.aim-icon {
   -webkit-clip-path: polygon(5% 0, 100% 0, 100% 100%, 5% 100%, 5% 60%, 0 50%, 5% 40%);
   clip-path: polygon(5% 0, 100% 0, 100% 100%, 5% 100%, 5% 60%, 0 50%, 5% 40%);
   background-size: cover;
-  background-position: center;
-  min-height: 350px !important; }
+  background-position: center; }
 
 .cta-bar {
   width: 100%;
@@ -1255,7 +1254,7 @@ div.aim-icon {
   background: rgba(56, 57, 56, 0.3); }
 
 footer {
-  height: 200px;
+  height: 245px;
   width: 100%;
   background: #383938;
   padding: 25px 0 0 0;
@@ -1272,9 +1271,6 @@ footer {
   font-style: italic;
   font-size: 21px;
   font-weight: 100; }
-
-.footer-container {
-  padding-top: 25px; }
 
 .footer-logo-holder {
   position: relative;
@@ -1533,7 +1529,8 @@ footer {
       margin: 0; }
 
   .work-box {
-    height: 365px; } }
+    height: 365px;
+    padding-bottom: 65px; } }
 @media screen and (max-width: 992px) {
   .container {
     width: 95%; }
