@@ -50,6 +50,6 @@ gulp.task('default', ['jshint','scripts','sass'], function() {
   gulp.watch('../js/main.js', ['jshint', 'scripts']);
 
   // watch for SASS changes
-  gulp.watch('../styles/**/*.scss', ['sass','styleGuide']);
+  gulp.watch('../styles/**/*.scss', ['sass']);
 
 });
