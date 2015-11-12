@@ -15,7 +15,7 @@
 		$thisURL = get_site_url();
 		$contain = strpos($thisURL, "macarthur");
 
-		if($contain ==! 0){
+		if($contain !== 0){
 			echo do_shortcode("[metaslider id=4]"); 
 		} else {
 			echo do_shortcode("[metaslider id=21]"); 

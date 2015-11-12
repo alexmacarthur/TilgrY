@@ -126,7 +126,7 @@
       $first, $second), $color;
 	background: -o-linear-gradient(
       $first, $second), $color;
-	background: -o-linear-gradient(
+	background: linear-gradient(
       $first, $second), $color;
 }
 
@@ -137,7 +137,7 @@
       $first, $second);
 	background: -o-linear-gradient(
       $first, $second);
-	background: -o-linear-gradient(
+	background: linear-gradient(
       $first, $second);
 }
 
