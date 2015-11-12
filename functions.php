@@ -4,13 +4,17 @@
 
 	add_filter('show_admin_bar', '__return_false');
 
-	/**
-	 * Add jquery support
-	 */
-	function jquery_scripts() {
-	     wp_enqueue_script( 'jquery' );
+	// enqueue scripts
+	function enqueue_scripts() {
+	    wp_deregister_script('jquery');
+		wp_register_script('jquery', "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js", false, null);
+		wp_enqueue_script('jquery');
+
+		wp_enqueue_script( 'main-scripts', get_template_directory_uri() . '/js/scripts.js', array( 'jquery' ), false, true );
+
+		wp_enqueue_style( 'main-styles', get_template_directory_uri() . '/styles/style.css' );
 	}
-	add_action( 'wp_enqueue_scripts', 'jquery_scripts' );
+	add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
 
 	function remove_menus(){
 		remove_menu_page( 'edit.php' );   
