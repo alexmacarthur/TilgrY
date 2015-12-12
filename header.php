@@ -41,12 +41,20 @@
 
 				<ul class="nav-links">
 					<div id="close-mobile-menu"><?php get_template_part('img/inline', 'close.svg'); ?></div>
-					
-					<li>Who We Are<a href="<?php echo get_site_url(); ?>/about"></a></li>
-					<li>Our Approach<a href="<?php echo get_site_url(); ?>/approach"></a></li>
-					<li>Our Services<a href="<?php echo get_site_url(); ?>/services"></a></li>
-					<li>Contact Us<a href="<?php echo get_site_url(); ?>/contact"></a></li>
-					<li>Get Involved<a href="<?php echo get_site_url(); ?>/getinvolved"></a></li>
+			
+					<?php if(strpos(get_site_url(), '/fr') > 0): ?>
+						<li>Ce Que Nous Sommes<a href="<?php echo get_site_url(); ?>/about"></a></li>
+						<li>Notre Approche<a href="<?php echo get_site_url(); ?>/approach"></a></li>
+						<li>Our Services<a href="<?php echo get_site_url(); ?>/services"></a></li>
+						<li>Contact Us<a href="<?php echo get_site_url(); ?>/contact"></a></li>
+						<li>Get Involved<a href="<?php echo get_site_url(); ?>/getinvolved"></a></li>
+					<?php else: ?>
+						<li>Who We Are<a href="<?php echo get_site_url(); ?>/about"></a></li>
+						<li>Our Approach<a href="<?php echo get_site_url(); ?>/approach"></a></li>
+						<li>Our Services<a href="<?php echo get_site_url(); ?>/services"></a></li>
+						<li>Contact Us<a href="<?php echo get_site_url(); ?>/contact"></a></li>
+						<li>Get Involved<a href="<?php echo get_site_url(); ?>/getinvolved"></a></li>
+					<?php endif; ?>
 				</ul>
 
 			</div>
