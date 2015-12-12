@@ -3,6 +3,8 @@
  * Template Name: Home Page
  * Description: Just the main page.
  */
+
+global $isFrench;
 ?>
 
 <!-- if on the home page, call the 'home' header -->
@@ -12,8 +14,7 @@
 
 	<?php 
 		// loads different slider numbers based on if it's the dev site or live site
-		$thisURL = get_site_url();
-		$contain = strpos($thisURL, "macarthur");
+		$contain = strpos($get_site_url, "macarthur");
 
 		if($contain !== 0){
 			echo do_shortcode("[metaslider id=4]"); 
@@ -24,11 +25,23 @@
 
 		<div class="container home-container">
 
-			<div class="box home-box about-box">.
-				<label class="box-label home-box-label">About Us<?php get_template_part('img/inline', 'edge.svg'); ?></label>
-				<span class="home-span">TilgrY is a social business that mobilizes resources in rural communities to impact women’s social and economic conditions, in order to reach sustainable development of entire communities in Burkina Faso.</span>
-				<a href="<?php echo get_site_url(); ?>/about" class="learn-more">Learn More About Us</a>
-			</div>
+			<?php if($isFrench): ?>
+
+				<div class="box home-box about-box">.
+					<label class="box-label home-box-label">A PROPOS DE NOUS<?php get_template_part('img/inline', 'edge.svg'); ?></label>
+					<span class="home-span">TilgrY est une entreprise à caractère social travaillant à rassembler les ressources dans les communautés rurales en vue de parvenir à un développement durable au Burkina Faso.</span>
+					<a href="<?php echo get_site_url(); ?>/about" class="learn-more">En savoir plus</a>
+				</div>
+
+			<?php else: ?>
+
+				<div class="box home-box about-box">.
+					<label class="box-label home-box-label">About Us<?php get_template_part('img/inline', 'edge.svg'); ?></label>
+					<span class="home-span">TilgrY is a social business that mobilizes resources in rural communities to impact women’s social and economic conditions, in order to reach sustainable development of entire communities in Burkina Faso.</span>
+					<a href="<?php echo get_site_url(); ?>/about" class="learn-more">Learn More About Us</a>
+				</div>
+
+			<?php endif; ?>
 
 		</div>
 

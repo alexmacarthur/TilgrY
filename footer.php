@@ -1,3 +1,5 @@
+<?php global $isFrench; ?>
+
 <!-- begin footer -->
 </div><!-- end wrapper -->
 		<footer>
@@ -7,14 +9,22 @@
 				</div>
 
 				<ul class="nav-links footer-nav-links">
-					<li>Who We Are<a href="<?php echo get_site_url(); ?>/about"></a></li>
-					<li>Our Approach<a href="<?php echo get_site_url(); ?>/approach"></a></li>
-					<li>Our Services<a href="<?php echo get_site_url(); ?>/services"></a></li>
-					<li>Contact Us<a href="<?php echo get_site_url(); ?>/contact"></a></li>
-					<li>Get Involved<a href="<?php echo get_site_url(); ?>/getinvolved"></a></li>
+					<?php if($isFrench): ?>
+						<li>QUI SOMMES NOUS?<a href="<?php echo get_site_url(); ?>/about"></a></li>
+						<li>Notre Approche<a href="<?php echo get_site_url(); ?>/approach"></a></li>
+						<li>NOS SERVICES<a href="<?php echo get_site_url(); ?>/services"></a></li>
+						<li>CONTACTEZ NOUS<a href="<?php echo get_site_url(); ?>/contact"></a></li>
+						<li>ENGAGEZ-VOUS<a href="<?php echo get_site_url(); ?>/getinvolved"></a></li>
+					<?php else: ?>
+						<li>Who We Are<a href="<?php echo get_site_url(); ?>/about"></a></li>
+						<li>Our Approach<a href="<?php echo get_site_url(); ?>/approach"></a></li>
+						<li>Our Services<a href="<?php echo get_site_url(); ?>/services"></a></li>
+						<li>Contact Us<a href="<?php echo get_site_url(); ?>/contact"></a></li>
+						<li>Get Involved<a href="<?php echo get_site_url(); ?>/getinvolved"></a></li>
+					<?php endif; ?>
 				</ul>
 
-				<span class="facebook-link"><a href="https://www.facebook.com/tilgryforbetterlife">Follow us on Facebook!</a></span>
+				<span class="facebook-link"><a href="https://www.facebook.com/tilgryforbetterlife"><?php if($isFrench): ?>Suivez nous sur Facebook<?php else: ?>Follow us on Facebook!<?php endif; ?></a></span>
 				
 				<span class="copyright">
 					&copy; <?=date('Y')?> All rights reserved. Designed &amp; built by <a href="http://www.macarthur.me">Alex MacArthur</a>.

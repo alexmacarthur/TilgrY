@@ -1,5 +1,8 @@
 <?php
 
+	global $isFrench;
+	$isFrench = strpos(get_site_url(), '/fr') > 0 ? true : false;
+
 	add_theme_support( 'post-thumbnails' ); 
 
 	add_filter('show_admin_bar', '__return_false');
