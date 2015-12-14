@@ -118,7 +118,7 @@ global $isFrench;
 							?>
 						</p>
 					</div>
-					<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $home_page_post_id ), 'single-post-thumbnail' ); ?>
+					<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $homePageSection->ID ), 'single-post-thumbnail' ); ?>
 					<div class="six columns work-image" style="background-image: url('<?php echo $image[0];?> ');">
 
 					</div>
