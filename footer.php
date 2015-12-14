@@ -27,7 +27,13 @@
 				<span class="facebook-link"><a href="https://www.facebook.com/tilgryforbetterlife"><?php if($isFrench): ?>Suivez nous sur Facebook<?php else: ?>Follow us on Facebook!<?php endif; ?></a></span>
 				
 				<span class="copyright">
-					&copy; <?=date('Y')?> All rights reserved. Designed &amp; built by <a href="http://www.macarthur.me">Alex MacArthur</a>.
+
+					<?php if($isFrench): ?>
+						&copy; Tous les droits sont réservés. Conçu et construit par <a href="http://www.macarthur.me">Alex MacArthur</a>.
+					<?php else: ?>
+						&copy; <?=date('Y')?> All rights reserved. Designed &amp; built by <a href="http://www.macarthur.me">Alex MacArthur</a>.
+					<?php endif; ?>
+
 				</span>
 			</div>
 		</footer>

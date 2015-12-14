@@ -13,10 +13,12 @@ global $isFrench;
 	<main>
 
 	<?php 
+	
 		// loads different slider numbers based on if it's the dev site or live site
 		$contain = strpos($get_site_url, "macarthur");
+		echo $contain;
 
-		if($contain !== 0){
+		if($contain > 0 || $isFrench){
 			echo do_shortcode("[metaslider id=4]"); 
 		} else {
 			echo do_shortcode("[metaslider id=21]"); 
@@ -27,7 +29,7 @@ global $isFrench;
 
 			<?php if($isFrench): ?>
 
-				<div class="box home-box about-box">.
+				<div class="box home-box about-box">
 					<label class="box-label home-box-label">A PROPOS DE NOUS<?php get_template_part('img/inline', 'edge.svg'); ?></label>
 					<span class="home-span">TilgrY est une entreprise à caractère social travaillant à rassembler les ressources dans les communautés rurales en vue de parvenir à un développement durable au Burkina Faso.</span>
 					<a href="<?php echo get_site_url(); ?>/about" class="learn-more">En savoir plus</a>
@@ -35,7 +37,7 @@ global $isFrench;
 
 			<?php else: ?>
 
-				<div class="box home-box about-box">.
+				<div class="box home-box about-box">
 					<label class="box-label home-box-label">About Us<?php get_template_part('img/inline', 'edge.svg'); ?></label>
 					<span class="home-span">TilgrY is a social business that mobilizes resources in rural communities to impact women’s social and economic conditions, in order to reach sustainable development of entire communities in Burkina Faso.</span>
 					<a href="<?php echo get_site_url(); ?>/about" class="learn-more">Learn More About Us</a>
@@ -102,7 +104,7 @@ global $isFrench;
 	
 		<div class="container home-container">
 
-			<div class="box home-box work-box">.
+			<div class="box home-box work-box">
 				<label class="box-label home-box-label">What's New<?php get_template_part('img/inline', 'edge.svg'); ?></label>
 
 				<div class="row no-center">
@@ -110,15 +112,9 @@ global $isFrench;
 						<p>
 							<?php
 
-								if($contain ==! 0){
-									$home_page_post_id = 74;
-								} else {
-									$home_page_post_id = 49;
-								}
+								$homePageSection = get_page_by_title('Last Section on Home Page');
+								echo $homePageSection->post_content;
 
-							  	$home_page_post = get_post( $home_page_post_id, ARRAY_A );
-							  	$content_home = $home_page_post['post_content'];
-							  	echo $content_home;
 							?>
 						</p>
 					</div>
