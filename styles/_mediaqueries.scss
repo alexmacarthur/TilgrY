@@ -108,8 +108,15 @@
 }
 
 @media screen and (max-width: 640px){
+	.switch-language {
+		position: relative;
+		display: block;
+		text-align: center;
+		margin: 0px 0 10px 0;
+	}
 	.top-bar{
-		height: 200px;
+		height: auto;
+		padding-bottom: 40px;
 	}
 		.logo, .vision-statement{
 			width:100%;
@@ -117,7 +124,6 @@
 		}
 		.vision-statement{
 			height: 95px;
-			margin-top: 7px;
 			span{
 				text-align:center;
 				font-size: 16px;

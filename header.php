@@ -50,6 +50,9 @@
 
 				</div>
 			</div>
+
+			<br>
+
 			<div class="nav-links-bar">
 
 				<ul class="nav-links">
