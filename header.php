@@ -32,6 +32,11 @@
 					</div>
 
 					<div class="vision-statement">
+						<?php if($isFrench): ?>
+							<a href="/" class="switch-language">View Site in English</a>
+						<?php else: ?>
+							<a href="/fr" class="switch-language">View Site in French</a>
+						<?php endif; ?>
 						<span>
 							<?php if($isFrench): ?>
 								Une vision pour promouvoir un développement et un mécanisme plus efficient de conduite des affaires en vue de réduire la pauvreté en milieu rural au Burkina Faso.

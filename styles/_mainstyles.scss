@@ -5,6 +5,17 @@ $background: #f6f6f6;
 $red: #8c4646;
 $darkred: #482424;
 
+.switch-language {
+	position: absolute;
+    right: 0;
+    margin-top: -15px;
+    color: $red;
+
+    &:hover {
+    	color: $darkred;
+    }
+}
+
 .construction{
 	width:100%;
 	padding: 10px;
@@ -55,6 +66,7 @@ nav{
 	.top-bar{
 		margin: 15px;
 		height: 100px;
+	    margin: 25px 15px 15px;
 	}
 		.logo{
 			height: 100%;
