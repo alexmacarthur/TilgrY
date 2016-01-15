@@ -33,7 +33,7 @@
 
 					<div class="vision-statement">
 						<?php if($isFrench): ?>
-							<a href="/" class="switch-language">View Site in English</a>
+							<a href="/" class="switch-language">Voir le Site en Anglais</a>
 						<?php else: ?>
 							<a href="/fr" class="switch-language">View Site in French</a>
 						<?php endif; ?>
