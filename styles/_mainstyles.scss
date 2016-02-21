@@ -39,7 +39,7 @@ html, body{
 
 .wrapper{
 	min-height: 100%;
-	height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+	height: auto !important;
 	height: 100%;
 }
 
@@ -64,8 +64,7 @@ nav{
 }
 
 	.top-bar{
-		margin: 15px;
-	   	margin: 25px 15px -25px;
+	    margin: 25px 15px 0;
 
 	    &:after {
 	    	content: '';
@@ -78,12 +77,13 @@ nav{
 			width: 25%;
 			float:left;
 			position:relative;
+
 			svg{
-				//@extend %vertical-align;
 				display:block;
 				height: 80%;
 			    max-height: 100px;
 			}
+
 			a{
 				display:block;
 				height:100%;
@@ -92,7 +92,6 @@ nav{
 		}
 		.vision-statement{
 			width: 75%;
-			height:100%;
 			float:left;
 			position:relative;
 		    margin-top: 15px;
@@ -103,7 +102,6 @@ nav{
 				text-align:right;
 				font-size: 22px;
   				line-height: 100%;
-				//@extend %vertical-align;
 				p{
 					font-style: italic;
 					color:rgba($gray, .8);
@@ -116,22 +114,15 @@ nav{
 	.nav-links-bar{
 		@include linearGradient(rgba($green, 0), rgba(black, .4), $green);
 		width:100%;
-		height: 50px;
-
-		&:after {
-			content: '';
-			display: table;
-			clear: both;
-		}
 	}
 		.nav-links{
-			@extend %display-flex;
-			@extend %justify-content-space-around;
+			width: 80%;
+			max-width: 1200px;
+			display: flex;
+			justify-content: space-around;
+		    text-align: center;
 			list-style-type:none;
-			width: 70%;
 	  		margin: 0 auto;
-	  		height: 50px;
-	  		line-height: 50px;
 
 	  		&:after {
 	  			content: '';
@@ -140,13 +131,18 @@ nav{
 	  		}
 
 	  		li{
+	  			display: inline-block;
 	  			position:relative;
 	  			color:white;
 	  			text-transform:uppercase;
-	  			font-size: 23px;
+	  			font-size: 20px;
+			    padding: 0 15px;
 	  			margin: 0;
-	  			width: 20%;
 	  			text-align:center;
+	  			white-space: nowrap;
+	  			height: 100%;
+    			line-height: 50px;
+
 	  			&:hover{
 	  				background: rgba($green, .5);
 	  			}

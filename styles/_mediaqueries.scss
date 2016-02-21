@@ -3,7 +3,7 @@
 	.nav-links{
 		width: 85%;
 		li{
-			font-size: 20px;
+			font-size: 18px;
 		}
 	}
 	.cta-container{
@@ -44,6 +44,11 @@
 	}
 	.nav-links{
 		width: 100%;
+		line-height: normal;
+
+		li {
+		    padding: 0 10px;
+		}
 	}
 	.home-slider{
 		.caption-wrap{
@@ -69,9 +74,6 @@
 }
 
 @media screen and (max-width: 776px){
-	.top-bar{
-		height: 150px;
-	}
 	.logo{
 		svg{
 			height: 65%;
@@ -79,7 +81,8 @@
 	}
 	.nav-links{
 		li{
-			  font-size: 16px;
+			font-size: 15px;
+			padding: 0 8px;
 		}
 	}
 	.cta-bar{
@@ -114,16 +117,24 @@
 		text-align: center;
 		margin: 0px 0 10px 0;
 	}
+	.logo {
+    	float: none;
+	}
 	.top-bar{
 		height: auto;
-		padding-bottom: 40px;
+
+		&:after {
+			content: '';
+			display: table;
+			clear: both;
+		}
 	}
 		.logo, .vision-statement{
 			width:100%;
 
 		}
 		.vision-statement{
-			height: 95px;
+			height: auto;
 			span{
 				text-align:center;
 				font-size: 16px;
@@ -138,7 +149,6 @@
 				height: 100%;
 			}
 			a{
-				width: 50%;
   				margin: 0 auto;
 			}
 		}
@@ -158,10 +168,13 @@
 		background: rgba($background, .95);
 		z-index: 11;
 		display:block;
+
 		li{
 			width:100%;
 			color: $green;
 			font-size: 23px;
+			height: 50px;
+
 			&:hover{
 				color:white;
 			}
