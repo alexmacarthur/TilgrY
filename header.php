@@ -5,11 +5,23 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+	<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/og.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TilgrY. For better living.">
+    <meta property="og:url" content="http://www.tilgry.org">
+    <meta property="og:description" content="A vision for fostering sustainable development and a more efficient means of conducting business affairs in order to reduce poverty in rural communities in Burkina Faso.">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="TilgrY. For better living.">
+    <meta name="twitter:description" content="A vision for fostering sustainable development and a more efficient means of conducting business affairs in order to reduce poverty in rural communities in Burkina Faso.">
+    <meta name="twitter:image" content="<?php echo get_template_directory_uri(); ?>/img/og.jpg">
+
 	<title><?php bloginfo('title')?></title>
 	<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,400italic,500,500italic,700,800' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" type="/image/x-icon"/>
 	<?php wp_head()?>
-
+			
 </head>
 
 <body class="no-js">
