@@ -3,7 +3,7 @@
 }
 
 @mixin transitionSpeed{
-	transition: all .1s ease-in-out, font-size 0s ease-in-out, line-height 0s ease-in-out;
+	transition: background .1s ease-in-out, color .1s ease-in-out, opacity .1s ease-in-out;
 }
 
 @mixin offScreen($value: -250%){
