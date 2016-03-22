@@ -149,7 +149,7 @@ global $isFrench;
 					<?php endif; ?>
 				</div>
 				<div class="four columns">
-					<a class="cta-button donate-cta-button" href="<?php echo get_site_url(); ?>/getinvolved">
+					<a class="cta-button donate-cta-button" href="<?php echo get_site_url(); ?>/<?php if($isFrench){echo '/fr/';} ?>getinvolved">
 					<?php if($isFrench): ?>
 						Impliquez aujourd'hui
 					<?php else: ?>
@@ -190,7 +190,7 @@ global $isFrench;
 						En savoir plus sur notre travail
 					<?php else: ?>
 						Learn More About Our Work
-					<?php endif;?>
+					<?php endif; ?>
 				</a>
 			</div>
 

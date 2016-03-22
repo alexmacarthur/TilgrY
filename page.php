@@ -75,7 +75,7 @@ global $isFrench;
 
 	 				<span class="more-involved">
 	 					<?php if($isFrench): ?>
-	 						Souhaitez-vous voir d’autres manières de s’engager avec nous? <a href="/getinvolved">Cliquez ici.</a>
+	 						Souhaitez-vous voir d’autres manières de s’engager avec nous? <a href="/fr/getinvolved">Cliquez ici.</a>
 	 					<?php else: ?>
 							Looking for other ways to get involved? <a href="/getinvolved">See them here.</a>
 	 					<?php endif; ?>
